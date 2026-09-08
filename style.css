@@ -49,3 +49,31 @@
 @media(max-width:600px){
   .meeting-protocol{width:62vw;max-width:285px;padding-right:26px}
 }
+/* Minifix – ausschließlich Mobile Meetingprotokoll */
+@media(max-width:600px){
+  .meeting-protocol{
+    width:68vw;
+    max-width:315px;
+    padding-left:18px;
+    padding-right:18px;
+  }
+  .meeting-protocol h2{font-size:20px}
+}
+
+/* INFO – breiter auf Desktop und scrollbar auf Desktop/Mobile */
+#info .modal-card{
+  width:min(900px,92vw);
+  max-width:900px;
+  max-height:calc(100dvh - 40px);
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+@media(max-width:600px){
+  #info .modal-card{
+    width:94vw;
+    max-width:94vw;
+    max-height:calc(100dvh - 24px);
+    overflow-y:auto;
+    overflow-x:hidden;
+  }
+}
