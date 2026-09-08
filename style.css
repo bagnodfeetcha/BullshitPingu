@@ -14,6 +14,25 @@
 .protocol{display:none;border:2px solid #fff;background:#f29a2e;color:#101820;border-radius:10px;padding:15px 36px;font-size:clamp(20px,1.8vw,28px);font-weight:800;box-shadow:0 5px 18px #0007}
 .protocol.show{display:block}
 .meeting-protocol{position:absolute;z-index:21;left:50%;top:63%;transform:translate(-50%,-50%);width:min(460px,82vw);background:rgba(225,235,241,.92);color:#102230;border:2px solid rgba(255,255,255,.95);border-radius:16px;padding:18px 28px;box-shadow:0 10px 35px #0008}
-.meeting-protocol h2{margin:0 0 10px;font-size:clamp(22px,2vw,30px)}
+.meeting-protocol h2{margin:0 0 10px;font-size:clamp(28px,2.6vw,38px)}
 .meeting-protocol ul{margin:0;padding:0;list-style:none;font-size:clamp(17px,1.5vw,23px);font-weight:700;line-height:1.45}
-@media(max-width:600px){.protocol{padding:14px 24px;font-size:18px}.meeting-protocol{top:66%;width:84vw;padding:15px 20px}.meeting-protocol h2{font-size:21px}.meeting-protocol ul{font-size:16px}}
+@media(max-width:600px){.protocol{padding:14px 24px;font-size:18px}.meeting-protocol{top:66%;width:84vw;padding:15px 20px}.meeting-protocol h2{font-size:27px}.meeting-protocol ul{font-size:16px}}
+/* Iteration 7 – ausschließlich Mobile-Minifixes */
+@media(max-width:600px){
+  /* Startbereich tiefer: Label beginnt ungefähr an der bisherigen JOUR-FIXE-Textposition */
+  .start-actions{transform:translateY(52px)}
+
+  /* Meetingprotokoll schmaler und rechts unten, damit Pingu frei bleibt */
+  .meeting-protocol{
+    left:auto;
+    right:10px;
+    top:auto;
+    bottom:12px;
+    transform:none;
+    width:56vw;
+    max-width:260px;
+    padding:12px 14px;
+  }
+  .meeting-protocol h2{font-size:24px}
+  .meeting-protocol ul{font-size:14px;line-height:1.35}
+}
