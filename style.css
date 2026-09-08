@@ -45,3 +45,7 @@
   /* Meetingprotokoll: rechts im Feld mehr Luft */
   .meeting-protocol{padding-right:22px}
 }
+/* Iteration 9 – Mobile-Minifix: Meetingprotokoll etwas breiter */
+@media(max-width:600px){
+  .meeting-protocol{width:62vw;max-width:285px;padding-right:26px}
+}
