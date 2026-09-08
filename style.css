@@ -9,3 +9,11 @@
 .tile{background:#c2ced8ef;font-weight:700;color:#07131d}
 .win-close{width:76px;height:76px;font-size:48px;right:24px;top:24px}
 @media(max-width:600px){.back{padding:14px 32px;font-size:20px}.win-close{width:68px;height:68px;font-size:44px;right:14px;top:14px}}
+/* Iteration 5 – Gewinnzeile + Protokoll */
+.tile.winner{background:#f29a2e!important;color:#07131d!important}
+.protocol{display:none;border:2px solid #fff;background:#f29a2e;color:#101820;border-radius:10px;padding:15px 36px;font-size:clamp(20px,1.8vw,28px);font-weight:800;box-shadow:0 5px 18px #0007}
+.protocol.show{display:block}
+.meeting-protocol{position:absolute;z-index:21;left:50%;top:63%;transform:translate(-50%,-50%);width:min(460px,82vw);background:rgba(225,235,241,.92);color:#102230;border:2px solid rgba(255,255,255,.95);border-radius:16px;padding:18px 28px;box-shadow:0 10px 35px #0008}
+.meeting-protocol h2{margin:0 0 10px;font-size:clamp(22px,2vw,30px)}
+.meeting-protocol ul{margin:0;padding:0;list-style:none;font-size:clamp(17px,1.5vw,23px);font-weight:700;line-height:1.45}
+@media(max-width:600px){.protocol{padding:14px 24px;font-size:18px}.meeting-protocol{top:66%;width:84vw;padding:15px 20px}.meeting-protocol h2{font-size:21px}.meeting-protocol ul{font-size:16px}}
