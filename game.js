@@ -1,4 +1,4 @@
-const phrases=["Kapazität","Akquise","Klopft!!","Antrag","Dankenswerterweise","Struktur","Ordnerstruktur","Effizienz","Jour fixe","Mitdenken","Prio","Abholen","Ich erwarte","Klar??","Hallo??","Unmöglich","Es kann nicht sein","Hut auf","Das stimmt nicht","Nein!!","Angebot","Weihnachts...","Nochmal!...","Home Office","So!","Deadline","Stakeholder","Performance"];
+const phrases=["Kapazität","Akquise","Klopft!!","Antrag","Dankenswerterweise","Struktur","Ordnerstruktur","Effizienz","Jour fixe","Mitdenken","Prio","Abholen","Ich erwarte","Klar??","Hallo??","Unmöglich","Es kann nicht sein, dass...","Hut auf","Das stimmt nicht","Nein!!","Angebot","Weihnachts...","Nochmal!...","Home Office","So!","Deadline","Stakeholder","Performance"];
 const $=s=>document.querySelector(s), board=$('#board'), start=$('#start'), game=$('#game'), info=$('#info'), win=$('#win');
 let winningLine=null;
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}

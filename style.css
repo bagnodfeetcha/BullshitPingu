@@ -36,3 +36,12 @@
   .meeting-protocol h2{font-size:24px}
   .meeting-protocol ul{font-size:14px;line-height:1.35}
 }
+/* Iteration 8 – ausschließlich angeforderte Minifixes */
+@media(max-width:600px){
+  /* Startbereich nochmals ca. 1,5 Zeilen tiefer; Label +2pt */
+  .start-actions{transform:translateY(84px)}
+  .agenda-label{font-size:18.67px}
+
+  /* Meetingprotokoll: rechts im Feld mehr Luft */
+  .meeting-protocol{padding-right:22px}
+}
